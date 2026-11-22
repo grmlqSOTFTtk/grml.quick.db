@@ -267,7 +267,7 @@ await db.set("userInfo", { difficulty: "Easy" });
 
 ## Contributing
 
-Contributions are welcome. Open an issue or pull request on the [repository](https://github.com/grMLEqomlkkU5Eeinz4brIrOVCUCkJuN/grml.quick.db).
+Contributions are welcome. Open an issue or pull request on the [repository](https://github.com/grmlqSOTFTtk/grml.quick.db).
 
 ```bash
 npm install      # install dependencies

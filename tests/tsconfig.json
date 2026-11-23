@@ -6,6 +6,11 @@
     // have their own config and are excluded here.
     "extends": "../tsconfig.json",
     "compilerOptions": {
+        // nodenext lets these CJS tests import ESM-only deps such as
+        // @faker-js/faker >= 10 (require(esm), Node >= 22.12).
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "allowJs": true,
         "rootDir": "..",
         "noEmit": true,
         "declaration": false,

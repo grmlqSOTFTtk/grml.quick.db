@@ -107,7 +107,7 @@ describe("drivers integration tests", () => {
                         }
                         status = true;
                         break;
-                    } catch (err) {
+                    } catch (_err) {
                         await sleep(1000);
                     }
 
@@ -269,7 +269,6 @@ describe("drivers integration tests", () => {
                     try {
                         await driver.deleteAllRows(process.env.MYSQL_DATABASE!);
                     } catch (_) {
-                        // eslint-disable-next-line no-console
                         // console.error(
                         // `Cleanup failed for driver: ${driver}`,
                         // error

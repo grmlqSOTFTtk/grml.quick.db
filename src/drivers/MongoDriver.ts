@@ -97,8 +97,7 @@ export class MongoDriver implements IRemoteDriver {
     ): Promise<Model<CollectionInterface<T>> | undefined> {
         await this.prepare(name);
         return this.models.get(name) as
-            | Model<CollectionInterface<T>>
-            | undefined;
+            Model<CollectionInterface<T>> | undefined;
     }
 
     public async getAllRows(
